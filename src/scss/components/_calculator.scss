@@ -2,6 +2,7 @@
 
 .calc {
   transform: scale(0.8);
+  width: 325px;
 
   @include abs.mq-sm {
     transform: scale(1);
@@ -16,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
 
-    color: var(--header-text);
+    color: white;
 
     transition: color 300ms ease-in-out;
   }
@@ -43,7 +44,8 @@
       border-radius: 0.75rem;
       padding: 0 0.25rem;
 
-      background-color: var(--toggle-bg);
+      backdrop-filter: blur(3px);
+      background-color: rgba(36, 11, 28, 0.616);
       appearance: none;
       cursor: pointer;
 
@@ -55,7 +57,7 @@
         width: 1rem;
         border-radius: 50%;
         border: none;
-        background-color: var(--result-key-bg);
+        background-color: hsl(176, 100%, 44%);
         transition: background-color 300ms ease-in-out;
       }
 
@@ -65,7 +67,7 @@
         width: 1rem;
         border-radius: 50%;
         border: none;
-        background: var(--result-key-bg);
+        background: hsl(176, 100%, 44%);
       }
 
       &::-ms-thumb {
@@ -74,7 +76,7 @@
         width: 1rem;
         border-radius: 50%;
         border: none;
-        background: var(--result-key-bg);
+        background: hsl(176, 100%, 44%);
       }
     }
   }
@@ -93,11 +95,14 @@
     border-radius: 0.5rem;
     border: none;
     outline: none;
-    background-color: var(--screen-bg);
+    box-shadow: 2px 12px 28px 16px rgba(45, 2, 30, 0.68);
+    backdrop-filter: blur(4px);
+  // box-shadow: 1px 6px 45px 19px rgba(34, 60, 80, 0.2);
+    background-color: rgba(36, 11, 28, 0.616);
     transition: background-color 300ms ease-out, color 300ms ease-in-out;
 
     // Font styles
-    color: var(--header-text);
+    color: white;
     text-align: right;
     font-weight: inherit;
     font-size: inherit;
@@ -109,8 +114,10 @@
     padding: 1.5rem;
 
     border-radius: 0.5rem;
+   
 
-    background: var(--toggle-bg);
+    backdrop-filter: blur(3px);
+    background-color: rgba(36, 11, 28, 0.616);
     transition: background-color 300ms ease-in-out;
 
     // Grid logic
@@ -130,16 +137,20 @@
     justify-content: center;
     align-items: center;
 
-    background-color: var(--key-bg);
+    
+    background-color: rgba(50, 6, 35, 0.363);
+    backdrop-filter: blur(2px);
     transition: background-color 300ms ease-out, color 300ms ease-in-out;
 
     cursor: pointer;
     border: none;
     border-radius: 0.25rem;
-    box-shadow: 0 0.25rem 0 0 var(--key-shadow);
+    box-shadow: 0 0.25rem 0 0 rgba(26, 2, 18, 0.446);
+    
+    
 
     // Font styles
-    color: var(--key-text);
+    color: white;
     text-align: right;
     font-weight: inherit;
     font-size: 1.5rem;
@@ -152,16 +163,16 @@
 
     &.key--reset,
     &.key--backspace {
-      background-color: var(--action-key-bg);
-      box-shadow: 0 0.25rem 0 0 var(--action-key-shadow);
-      color: var(--action-key-text);
+      background-color: hsl(281, 89%, 26%);
+      box-shadow: 0 0.25rem 0 0 hsl(285, 91%, 52%);
+      color: white;
       text-transform: uppercase;
     }
 
     &.key--result {
-      background-color: var(--result-key-bg);
-      box-shadow: 0 0.25rem 0 0 var(--result-key-shadow);
-      color: var(--result-key-text);
+      background-color: hsl(176, 100%, 44%);
+      box-shadow: 0 0.25rem 0 0 hsl(177, 92%, 70%);
+      color: black;
     }
 
     &:active {

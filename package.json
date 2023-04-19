@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexyakimenko/calculator-app-ts.git"
+    "url": "git+https://github.com/yakimenkos/calculator-app-ts.git"
   },
   "author": {
     "name": "Alex Yakimenko",
@@ -20,9 +20,9 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexyakimenko/calculator-app-ts/issues"
+    "url": "https://github.com/yakimenkos/calculator-app-ts/issues"
   },
-  "homepage": "https://github.com/alexyakimenko/calculator-app-ts#readme",
+  "homepage": "https://github.com/yakimenkos/calculator-app-ts#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.3",
